@@ -128,35 +128,25 @@
   ],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "The JDM API",
       "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "description": "API rest en node sobre autos japoneses",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        "NodeJS",
+        "SupaBase"
       ],
-      "url": "https://mars.codes"
+      "url": "https://jdmapi.onrender.com/"
     },
     {
-      "name": "AdventJS",
+      "name": "The JDM API Doc",
       "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "description": "Documentacíon para The JDM API",
       "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
+        "Astro",
+        "Tailwind",
+        "JavaScript"
       ],
-      "url": "https://adventjs.dev"
-    },
-    {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
-      "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
-      ],
-      "url": "https://codember.dev"
+      "url": "https://thejdmapi.netlify.app/"
     }
   ]
 }
