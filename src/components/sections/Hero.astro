@@ -9,7 +9,7 @@ import GitHub from "@/icons/GitHub.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 import type { SocialIcon } from "@/types";
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, image, location, profiles, email } = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
@@ -21,7 +21,7 @@ const SOCIAL_ICONS: SocialIcon = {
 const GitHubInfo = profiles.find(({ network }) => network === "GitHub");
 const GitHubUrl = GitHubInfo?.url;
 
-const printInfo = [email, phone, GitHubUrl].filter(Boolean).join(" • ");
+const printInfo = [email, GitHubUrl].filter(Boolean).join(" • ");
 ---
 
 <Section>
@@ -50,7 +50,7 @@ const printInfo = [email, phone, GitHubUrl].filter(Boolean).join(" • ");
           )
         }
         {
-          phone && (
+          /*  phone && (
             <a
               href={`tel:${phone}`}
               title={`Llamar por teléfono a ${name} al número ${phone}`}
@@ -59,7 +59,7 @@ const printInfo = [email, phone, GitHubUrl].filter(Boolean).join(" • ");
             >
               <Phone />
             </a>
-          )
+          ) */
         }
         {
           profiles.map(({ network, url, username }) => {
